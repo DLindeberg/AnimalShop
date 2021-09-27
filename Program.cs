@@ -31,6 +31,7 @@ namespace AnimalShop
                 switch (input)
                 {
                     case 1:
+                        Console.Clear();
                         Console.WriteLine("Pick one animal:");
                         int i = 1;
                         foreach (var animal in animalShop.animalList)
@@ -54,24 +55,37 @@ namespace AnimalShop
                             case 1:
                                 string animalTypeDog = "Dog";
                                 Animal soldAnimalDog = animalShop.SellAnimal(animalTypeDog);
-                                Console.WriteLine("\nSuccessfully sold animal:\n");
+                                Console.Clear();
+                                Console.WriteLine("Successfully sold animal:\n");
                                 soldAnimalDog.PrintInfo();
+                                Console.WriteLine("\nPress any key to continue...");
+                                Console.ReadLine();
+                                Console.Clear();
                                 break;
                             case 2:
                                 string animalTypeCat = "Cat";
                                 Animal soldAnimalCat = animalShop.SellAnimal(animalTypeCat);
-                                Console.WriteLine("\nSuccessfully sold animal:\n");
+                                Console.Clear();
+                                Console.WriteLine("Successfully sold animal:\n");
                                 soldAnimalCat.PrintInfo();
+                                Console.WriteLine("\nPress any key to continue...");
+                                Console.ReadLine();
+                                Console.Clear();
                                 break;
                             case 3:
                                 string animalTypeBunny = "Bunny";
                                 Animal soldAnimalBunny = animalShop.SellAnimal(animalTypeBunny);
-                                Console.WriteLine("\nSuccessfully sold animal:\n");
+                                Console.Clear();
+                                Console.WriteLine("Successfully sold animal:\n");
                                 soldAnimalBunny.PrintInfo();
+                                Console.WriteLine("\nPress any key to continue...");
+                                Console.ReadLine();
+                                Console.Clear();
                                 break;
                         }
                         break;
                     case 2:
+                        Console.Clear();
                         animalShop.ShowMoney();
                         break;
                     case 3:

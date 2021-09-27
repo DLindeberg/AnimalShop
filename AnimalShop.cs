@@ -56,7 +56,7 @@ namespace AnimalShop
         }
         public void ShowMoney()
         {
-            Console.WriteLine($"\nThe shop has ${money}\n");
+            Console.WriteLine($"The shop has ${money}\n");
         }
     }
 }
