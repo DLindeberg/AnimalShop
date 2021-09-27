@@ -5,7 +5,7 @@ namespace AnimalShop
 {
     class AnimalShop
     {
-        private double Money;
+        private double money;
 
         public List<Animal> animalList;
         public AnimalShop()
@@ -48,7 +48,7 @@ namespace AnimalShop
             {
                 if (animal.Type == animalType)
                 {
-                    Money += animal.Price;
+                    money += animal.Price;
                     return animal;
                 }
             }
@@ -56,7 +56,7 @@ namespace AnimalShop
         }
         public void ShowMoney()
         {
-            Console.WriteLine($"\nThe shop has ${Money}\n");
+            Console.WriteLine($"\nThe shop has ${money}\n");
         }
     }
 }

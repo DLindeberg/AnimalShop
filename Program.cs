@@ -4,6 +4,7 @@ namespace AnimalShop
 {
     class Program
     {
+        static AnimalShop animalShop = new AnimalShop();
         static void Main(string[] args)
         {
             Menu();
@@ -13,10 +14,9 @@ namespace AnimalShop
         {
             bool stop = true;
             Console.WriteLine("Welcome to your Animalshop!\n");
+            
             do
             {
-                AnimalShop animalShop = new AnimalShop();
-
                 Console.WriteLine("\nWhat would you like to do?\n" +
                     "1. Sell animal\n" +
                     "2. Show stores money\n" +
